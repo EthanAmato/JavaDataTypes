@@ -177,6 +177,40 @@ public class HelloWorld {
 		isTodayTuesday.compareTo(false);
 		
 		
+		// Sometimes in Java, you want to convert one datatype to another.
+		// for example you might want to convert one datatype to another:
+		short smallNum = 120;
+		int newSmallNum = (int) smallNum;
+		System.out.println(newSmallNum);
+		
+		// This is called casting and it can lead to unforeseen results:
+		byte b = (byte) 2301;
+		System.out.println(b);
+		
+		
+		int smallInt = 120; // both of these ints are 4 bytes (32 bits)
+		int biggerInt = 550;
+		
+		// Downcasting 4 bytes into 1 byte:
+		byte b1 = (byte) smallInt;
+		System.out.printf("B1 from smallInt (120) becomes %d \n", b1);
+		
+		byte b2 = (byte) biggerInt;
+		System.out.printf("B2 from biggerInt (550) becomes %d \n", b2);
+		
+		short s1 = (short) biggerInt;
+		System.out.printf("S1 from biggerInt (550) becomes %d \n", s1);
+
+		// Operations in Java:
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 	}
