@@ -202,6 +202,101 @@ public class HelloWorld {
 		System.out.printf("S1 from biggerInt (550) becomes %d \n", s1);
 
 		// Operations in Java:
+		int x = 10;
+		int y = 20;
+		int z = 31;
+		
+		// We have access to the standard add, subtract, multiply, and divide characters
+		// + - * /
+		System.out.println(x + y);
+		System.out.println(x - z);
+		System.out.println(y * z);
+		System.out.println(y / x);
+
+		// We also have access to the modulo operator (%), it works just
+		// like in javascript -> it divides the two numbers and then returns
+		// the REMAINDER between the two
+		System.out.println(y % x); // results in 0 because there is no remainder when dividing 20 and 10
+		System.out.println(z % x); // Results in 1 because 31 / 10 would be 3 and 1 as remainder
+		
+		// Just like in Javascript we also have access to shorthand ways of
+		// incrementing variables by one
+		// Let's say we wanted to add 1 to a variable, we can use ++
+		//x++; // the same thing as saying x = x + 1
+		System.out.println(x++); // this will increment AFTER printing (this will print 10 and THEN add 1)
+		System.out.println(x); // meaning that this will print 11
+		
+		// Let's say you wanted to increment before printing though,
+		// you can use the ++x syntax:
+		System.out.println(++x); // This will add first (11 + 1 = 12) and THEN print
+		
+		// Using the -- syntax (x-- and --x) is the same idea, but it just subtracts by 1
+		System.out.println(--x);
+
+		// Other shorthand includes combining mathematical operations with = signs:
+		
+		int num1 = 2;
+		int num2 = 4;
+		
+		num1 += num2; // sets num1 = num1 + num2 (6)
+		num1 -= num2; // sets num1 = num1 - num2
+		num1 *= num2; // sets num = num1 * num2
+		num2 /= num1; // sets num2 = num2 / num1
+		
+		
+		// If statements -> if statements allow us to execute code
+		// based on a condition (essentially something that will evaluate
+		// to a boolean value of true or false). In Java there are NO falsey
+		// values (other than false) so we cant really get away with if(myString)
+		
+		// However, the syntax for an if statement in Java is identical to Javascript:
+		
+		// Inside the parentheses we can put our conditions:
+		
+		// Possible relational operators that determine whether a condition
+		// is true or false can be 
+		
+		// Equality operators:
+		int myFifteen = 15;
+		
+		if(myFifteen == 15) { // checks to see if both sides are equal, if so it resolves to true
+			System.out.println("They are equal!");
+		}
+		
+		if(myFifteen != 15) { // checks to see if both sides are NOT equal
+			System.out.println("This won't run since myFifteen IS 15");
+		}
+		
+		
+		// Of course, we also have access to other relational operators like:
+		
+		// x > y -> greater than
+		// x < y -> less than
+		// x >= y -> greater than or equal to
+		// x <= y -> less than or equal to
+		
+		// Just like Javascript, we have logical operators that follow
+		// the &&, ||, and ! syntax:
+		// Remember, these logical operators allow us to evaluate several
+		// boolean conditions within a single if statement:
+		
+		boolean isWearingCostume = true;
+		int candyCount = 1000;
+		
+		// Let's write a script that automates whether or not to hand out
+		// candy to trick or treaters:
+		// 		Our criteria is the following:
+//						IF someone is wearing a costume AND they look like they
+//						don't have an unreasonable amount of candy, we will give
+//		 				them a treat.
+//						Else we will play a trick on them 
+		
+		if(isWearingCostume == true && candyCount < 100) {
+			System.out.println("Here's a treat!");
+		} else {
+			System.out.println("Prepare to be tricked");
+		}
+		
 		
 		
 		
